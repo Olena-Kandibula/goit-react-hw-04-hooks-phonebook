@@ -1,0 +1,26 @@
+.list {
+  padding-left: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px;
+  max-width: 320px;
+}
+
+.item span {
+  margin-right: 12px;
+}
+
+.buttonDelete {
+  padding: 2px 18px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid gray;
+}
+.buttonDelete:hover {
+  background-color: rgb(53, 53, 51);
+  color: #ffffff;
+}

@@ -1,0 +1,31 @@
+.contactForm {
+  border: 1px solid rgb(107, 107, 107);
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.input {
+  display: block;
+  min-width: 200px;
+  margin: 8px 0;
+  border: 4px double rgb(209, 208, 208);
+}
+
+input::placeholder {
+  color: rgb(204, 200, 200);
+
+  font-style: italic;
+}
+
+.submitButton:hover {
+  color: #ffffff;
+  background-color: rgb(78, 139, 231);
+}
