@@ -3,6 +3,8 @@ import s from '../ContactList/ContactList.module.css';
 import { TiUserDeleteOutline } from 'react-icons/ti';
 
 function ContactList({ contacts, onDeleteContact }) {
+  // console.log(contacts.map(contact=> contact))
+
   return (
     <div>
       <ul className={s.list}>
