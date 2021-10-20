@@ -8,16 +8,11 @@ import ContactList from './components/ContactList/ContactList';
 import contactsJson from './contacts.json';
 
 function App() {
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState(
+    () => JSON.parse(window.localStorage.getItem('contacts')) ?? contactsJson,
+  );
+
   const [filter, setFilter] = useState('');
-
-  useEffect(() => {
-    const contactsLocal = localStorage.getItem('contacts');
-
-    contactsLocal
-      ? setContacts(JSON.parse(contactsLocal))
-      : setContacts(contactsJson);
-  }, []);
 
   useEffect(() => {
     window.localStorage.setItem('contacts', JSON.stringify(contacts));

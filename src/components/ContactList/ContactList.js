@@ -3,7 +3,7 @@ import s from '../ContactList/ContactList.module.css';
 import { TiUserDeleteOutline } from 'react-icons/ti';
 
 function ContactList({ contacts, onDeleteContact }) {
-  // console.log(contacts.map(contact=> contact))
+  console.log(contacts);
 
   return (
     <div>
@@ -29,7 +29,7 @@ function ContactList({ contacts, onDeleteContact }) {
 }
 
 ContactList.propTypes = {
-  contacts: PropTypes.array.isRequired,
+  // contacts: PropTypes.array.isRequired,
   onDeleteContact: PropTypes.func,
 };
 export default ContactList;
